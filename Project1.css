@@ -1,0 +1,174 @@
+body {
+    margin : 0;
+}
+
+.header-container {
+    background-image : linear-gradient(to bottom, #23affa, #0666d4);
+    padding : 20px;
+    padding-left : 50px;
+    padding-bottom : 0px;
+    margin-bottom: 0px;
+    display:flex;
+}
+
+.header-text {
+    width : 50%;
+    color : white;
+}
+
+.header-img {
+    width : 50%;
+    padding : 10px;
+    height : 50%;
+    padding-bottom : 0;
+}
+
+.header-img img {
+    height : 100%;
+    width : 100%;
+    display : block;
+}
+
+.btn-style {
+    background-color : gray;
+    color : white;
+    padding : 10px;
+    border : none;
+    border-radius : 5px;
+    font-size : 25px;
+    width : 25%;
+}
+
+.portfolio-container {
+    padding : 50px;
+    margin-left:auto;
+    margin-right : auto;
+    text-align : center;
+}
+
+.offer-container {
+    background-color : #5c80e4;
+    text-align : center;
+    padding : 50px;
+    color : white;
+}
+
+.offer-text p {
+    margin-bottom : 0;
+}
+
+.offer-text h4 {
+    margin-top : 0;
+}
+
+.offer-icon {
+    text-align : center;
+    display : flex;
+    justify-content : center;
+    padding : 20px;
+}
+
+.offer-icon i {
+    border-radius : 50%;
+    background-color : white;
+    width : 100px;
+    height : 100px;
+    padding-top : 25px;
+    box-sizing : border-box;
+    color : #5c80e4;
+}
+
+.offer-icon div {
+    padding : 25px;
+}
+
+.WWCD-container {
+    padding : 10px;
+}
+
+.WWCD-text {
+    text-align : center;
+}
+
+.WWCD-text p {
+    margin-bottom : 0px;
+}
+
+.WWCD-text h4 {
+    margin-top : 0px;
+    margin-bottom : 10px;
+}
+
+.WWCD-img {
+    padding : 20px;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+.main-image{ 
+    background-image : url(portfolio-1-1.jpg);
+    width : 50%;
+    float:left;
+    height : 450px;
+    background-size : cover;
+    color : white;
+    position : relative;
+}
+
+.overlay {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    border : 0px solid white;
+    z-index : 1;
+    transition : all 1s;
+}
+.overlay:hover {
+    box-shadow : 0 0 0 25px white inset;
+}
+
+.main-image h1 {
+    padding : 30px;
+}
+.main-image p {
+    padding-left : 30px;
+}
+
+
+.link-icon i {
+    background-color: #5c80e4;
+    color : white;
+    
+}
+
+.copyright {
+    padding : 40px;
+    text-align : center;
+}
+
+/* 모바일 사이즈에서는 아래 스타일 적용*/
+@media screen and (max-width : 992px) {
+    .header-container {
+        display : block;
+    }
+    .header-text {
+        width : 100%;
+        display : block;
+        margin : auto;
+        margin-top : 50px;
+        text-align : center;
+    }
+    .header-img {
+        width : 100%;
+        display : block;
+        margin : auto;
+        margin-top : 42px;
+    }
+    .main-image {
+        float:none;
+        width : 100%;
+    }
+    .btn-style {
+        font-size : 20px;
+    }
+}
